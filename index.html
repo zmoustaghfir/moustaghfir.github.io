@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Zakaria Moustaghfir, Embedded Systems Electrical Engineer">
+    <title>Zakaria Moustaghfir - Embedded Systems Engineer</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #0a74da;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header h3 {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            background-color: #0073e6;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #005bb5;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0073e6;
+        }
+
+        .about,
+        .skills,
+        .projects,
+        .contact {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills ul,
+        .projects ul {
+            list-style: none;
+        }
+
+        .skills ul li,
+        .projects ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills ul li::before {
+            content: '✓';
+            color: green;
+            margin-right: 0.5rem;
+        }
+
+        .projects ul li {
+            margin-bottom: 1rem;
+        }
+
+        .projects ul li a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #0a74da;
+            padding: 1.5rem;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header h3 {
+                font-size: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Zakaria Moustaghfir</h1>
+        <h3>Embedded Systems Electrical Engineer</h3>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm Zakaria Moustaghfir, an Embedded Systems Electrical Engineer with experience in embedded systems
+            development,
+            AI integration, and hardware-software co-design. I have worked on various projects including driver
+            drowsiness detection,
+            ECG simulations, and digital modulation systems.
+        </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Embedded Systems Design (C, C++)</li>
+            <li>Microcontroller Programming (ARM, AVR, STM32)</li>
+            <li>RTOS & AUTOSAR</li>
+            <li>AI & Machine Learning (TensorFlow, MATLAB)</li>
+            <li>PCB Design (Altium, KiCAD)</li>
+            <li>Digital Modulation Techniques (QPSK, BPSK)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Driver Drowsiness Detection System:</strong>
+                AI-based system to detect drowsiness using sensors like FSR, camera recognition, and radar data
+                acquisition.
+                <a href="#">View Project</a>
+            </li>
+            <li>
+                <strong>ECG Simulation using Simulink:</strong>
+                Simulink model to simulate ECG signals with real-time simulation processing.
+                <a href="#">View Project</a>
+            </li>
+            <li>
+                <strong>Digital Modulation GUI:</strong>
+                Python-based GUI for controlling and simulating digital modulation techniques like QPSK.
+                <a href="#">View Project</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch with me, feel free to send me an email at:</p>
+        <p><a href="mailto:zakaria@example.com">zakaria@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Zakaria Moustaghfir. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
