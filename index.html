@@ -4,204 +4,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Zakaria Moustaghfir, Embedded Systems Electrical Engineer">
-    <title>Zakaria Moustaghfir - Embedded Systems Engineer</title>
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f9;
-        }
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-        header {
-            background-color: #0a74da;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        header h1 {
-            font-size: 2.5rem;
-        }
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 
-        header h3 {
-            font-size: 1.2rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin: 1.5rem 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 0.5rem 1rem;
-            background-color: #0073e6;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav a:hover {
-            background-color: #005bb5;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        section h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #0073e6;
-        }
-
-        .about,
-        .skills,
-        .projects,
-        .contact {
-            background-color: white;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .skills ul,
-        .projects ul {
-            list-style: none;
-        }
-
-        .skills ul li,
-        .projects ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .skills ul li::before {
-            content: '✓';
-            color: green;
-            margin-right: 0.5rem;
-        }
-
-        .projects ul li {
-            margin-bottom: 1rem;
-        }
-
-        .projects ul li a {
-            text-decoration: none;
-            color: #0073e6;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            background-color: #0a74da;
-            padding: 1.5rem;
-            color: white;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header h3 {
-                font-size: 1rem;
-            }
-
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                margin-bottom: 0.5rem;
-            }
-        }
-    </style>
+    <title>Portfolio | Ludiflex</title>
 </head>
 
 <body>
-
-    <header>
-        <h1>Zakaria Moustaghfir</h1>
-        <h3>Embedded Systems Electrical Engineer</h3>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Moustaghfir</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="Download_CV()">Download CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
         </nav>
-    </header>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I'm Zakaria Moustaghfir, an Embedded Systems Electrical Engineer with experience in embedded systems
-            development,
-            AI integration, and hardware-software co-design. I have worked on various projects including driver
-            drowsiness detection,
-            ECG simulations, and digital modulation systems.
-        </p>
-    </section>
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Embedded Systems Design (C, C++)</li>
-            <li>Microcontroller Programming (ARM, AVR, STM32)</li>
-            <li>RTOS & AUTOSAR</li>
-            <li>AI & Machine Learning (TensorFlow, MATLAB)</li>
-            <li>PCB Design (Altium, KiCAD)</li>
-            <li>Digital Modulation Techniques (QPSK, BPSK)</li>
-        </ul>
-    </section>
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Moustaghfir Zakaria</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>My name is Zakaria Moustaghfir, an Embedded Systems Electrical Engineer with experience in
+                            embedded systems development, AI
+                            integration, and hardware-software co-design. I have worked on various projects including
+                            ADAS Systems and automotive engineering,
+                            various advanced simulations, system automations, and digital telecommunication modulation
+                            systems.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn" onclick="sendMail()">Email Me</button>
+                        <button class="btn" onclick="Download_CV()">Download CV <i
+                                class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-whatsapp"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/avatar.png" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#about" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Driver Drowsiness Detection System:</strong>
-                AI-based system to detect drowsiness using sensors like FSR, camera recognition, and radar data
-                acquisition.
-                <a href="#">View Project</a>
-            </li>
-            <li>
-                <strong>ECG Simulation using Simulink:</strong>
-                Simulink model to simulate ECG signals with real-time simulation processing.
-                <a href="#">View Project</a>
-            </li>
-            <li>
-                <strong>Digital Modulation GUI:</strong>
-                Python-based GUI for controlling and simulating digital modulation techniques like QPSK.
-                <a href="#">View Project</a>
-            </li>
-        </ul>
-    </section>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>Hi, I'm Zakaria Moustaghfir, an Embedded Systems Engineer specializing in electrical
+                                engineering with a passion for
+                                designing and developing innovative solutions. I hold extensive experience in embedded
+                                systems design, real-time
+                                simulations, and integrating cutting-edge technologies for the automotive and industrial
+                                sectors. Throughout my career,
+                                I've worked on various complex projects, ranging from ADAS
+                                systems to automation in dynamic
+                                assembly lines. I thrive on solving challenges through a combination of hardware and
+                                software expertise, with strong
+                                proficiency in platforms like MATLAB, Simulink, Python, and C/C++. My focus is on
+                                creating efficient, reliable, and
+                                scalable systems, and I'm always eager to learn and adapt to emerging technologies. I
+                                aim to apply my skills to develop
+                                impactful, forward-thinking embedded solutions that improve people's lives and drive the
+                                future of technology.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn" onclick="Download_CV()">Download CV <i
+                                        class="uil uil-file-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Electrical engineering</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>ADAS & DMS</span>
+                                <span>PLC and Automation</span>
+                                <span>Electronic</span>
+                                <span>IoT engineering</span>
+                                <span>Machine Learning & AI integration</span>
+                                <span>MBD engineering</span>
+                                <span>Embedded software</span>
+                                <span>MATLAB/Simuink</span>
+                                <span>AutoCAD</span>
+                                <span>PSim</span>
+                                <span>Proteus</span>
+                                <span>OrCAD</span>
+                                <span>kiCAD</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Development</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP</span>
+                                <span>JAVA</span>
+                                <span>Python</span>
+                                <span>C/C++</span>
+                                <span>PSpice/Spice</span>
+                                <span>C Embedded</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>If you would like to get in touch with me, feel free to send me an email at:</p>
-        <p><a href="mailto:zakaria@example.com">zakaria@example.com</a></p>
-    </section>
+            <!-- -------------- PROJECT BOX ---------------- -->
 
-    <footer>
-        <p>&copy; 2024 Zakaria Moustaghfir. All Rights Reserved.</p>
-    </footer>
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>15+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Socia experiences</h3>
+                        <label>For an engaged and impactful society.</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Career Experience</h3>
+                        <label>2+ Years in the field</label>
+                    </div>
+                </div>
+            </section>
 
+            <!-- -------------- CONTACT BOX ---------------- -->
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: zmoustaghfir01@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +212 6 88 74 85 06</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Name">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- Modal Structure -->
+        <div id="cvModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Cv will be downloaded, please check your download folder on the device.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif" alt="Loading Animation"
+                class="modal-gif">
+        </div>
+
+        <!-- Blurred Background -->
+        <div id="blurOverlay" class="blur-overlay"></div>
+
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Moustaghfir Zakaria .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon"><i class="uil uil-whatsapp"></i></div>
+                <div class="icon"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none;">MOUSTAGHFIR Zakaria</a> - 2024 - All
+                    rights reserved
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
